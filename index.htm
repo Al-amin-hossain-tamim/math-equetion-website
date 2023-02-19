@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>math equation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <header class="flex justify-between w-10/12 mx-auto mt-12 bg-gray-300 rounded-lg ">
+        <div class="mx-4 my-2">
+            <h1 class="font-bold text-3xl">Interactive </h1>
+            <h3 font-semibold text-xl>Geometry Genius</h3>
+        </div>
+        <div  class="mx-4 my-auto">
+            <button class="bg-blue-500 text-white px-6 rounded-lg py-2"><a class="text-xl font-bold" href="blog.html" target="_blank">Blog</a></button>
+        </div>
+    </header>
+    <main>
+        <section class="my-12 ">
+            <div class="grid grid-cols-4 gap-4 w-10/12 mx-auto">
+                <div class="bg-rose-400	text-center px-4 py-6">
+                    <img src="images/triangle.png" alt="">
+                    <h2 class="text-2xl font-bold">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <input  class="w-20 px-2" type="text" name="" id="land-input-field" placeholder="b"><span>cm</span>
+                    <input  class="w-20 px-2" type="text" name="" id="height-input-field" placeholder="h"><span>cm</span>
+                    <div class="mt-4">
+                        <button id="tringle-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+                <div class="bg-sky-100	text-center px-4 pt-8">
+                    <img src="images/rectangle.png" alt="">
+                    <h2 class="text-2xl font-bold">rectangle</h2>
+                    <p>Area (A) = w x l</p>
+                    <input class="w-20 px-2" type="text" name="" id="width-input-field" placeholder="w"><span>cm</span>
+                    <input class="w-20 px-2" type="text" name="" id="length-input-field" placeholder="l"><span>cm</span>
+                    <div class="mt-10">
+                        <button id="Rectangle-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+                <div class="bg-teal-200	text-center px-4 pt-8">
+                    <img src="images/parallelogram.png" alt="">
+                    <h2 class="text-2xl font-bold">parallelogram</h2>
+                    <p>Area (A) = b x h</p>
+                    <input class="w-20 px-2" type="text" name="" id="parallelogram-width-input-field" placeholder="b"><span>cm</span>
+                    <input class="w-20 px-2" type="text" name="" id="parallelogram-height-input-field" placeholder="h"><span>cm</span>
+                    <div class="mt-12">
+                        <button id="Parallelogram-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+
+                <div id="result" class="text-center">
+                    <h1 class="text-3xl font-bold">Calculate Area</h1>
+                    <hr class="w-52 mx-auto bg-gray-500 h-1">
+                </div>
+
+                <div class="bg-sky-400 text-center px-4 pt-8">
+                    <img src="images/rhombus.png" alt="">
+                    <h2 class="text-2xl font-bold">Rhombus</h2>
+                    <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                    <input class="w-20 px-2" type="text" name="" id="rhombus-width-field" placeholder="d1"><span>cm</span>
+                    <input class="w-20 px-2" type="text" name="" id="rhombus-height-field" placeholder="d2"><span>cm</span>
+                    <div class="mt-8">
+                        <button id="Rhombus-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+                <div class="bg-slate-400 text-center px-4 py-6">
+                    <img src="images/pentagon.png" alt="">
+                    <h2 class="text-2xl font-bold">pentagon</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <input class="w-20 px-2" type="text" name="" id="pentagon-width-field" placeholder="p"><span>cm</span>
+                    <input class="w-20 px-2" type="text" name="" id="pentagon-height-field" placeholder="b"><span>cm</span>
+                    <div class="mt-4">
+                        <button id="Pentagon-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+                <div class="bg-rose-400	text-center px-4 pt-8">
+                    <img src="images/ellipse.png" alt="">
+                    <h2 class="text-2xl font-bold">Elipse</h2>
+                    <p>Area (A) =<img class="w-6 inline" src="images/pi-removebg-preview.png" alt="">ab</p>
+                    <input class="w-20 px-2" type="text" name="" id="elipse-width-field" placeholder="a"><span>cm</span>
+                    <input class="w-20 px-2" type="text" name="" id="elipse-height-field" placeholder="b"><span>cm</span>
+                    <div class="mt-12">
+                        <button id="Elipse-calculate-btn" class="bg-blue-500 px-16 font-semibold py-2 text-xl rounded-lg text-white">Calculalte</button>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/all-btn.js"></script>
+  </body>
+</html>
